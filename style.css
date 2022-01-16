@@ -4,17 +4,79 @@
 
     /* Colors */
 
-    --unnamed-color-ffffff: #FFFFFF;
-    --unnamed-color-9a9a9a: #9A9A9A;
-    --unnamed-color-333333: #333333;
-    --unnamed-color-ed1c22: #ED1C22;
-    --unnamed-color-10467e: #10467E;
-   
+    --white-color: #FFFFFF;
+    --C4-gray-color: #C4C4C4;
+    --C6-gray-color: #C6C6C6;
+    --lt-gray-color: #9A9A9A;
+    --dk-gray-color: #3E3E3E;
+    --dkr-gray-color: #333333;
+    --blue-color: #10467E;
+    --dk-blue-color: #212B37;
+    --red-color: #ED1C22;
+    --br-red-color: #FF0909;
+    --black-color: #000000;
+
     /*fonts*/
 
     --noto-font: 'Noto Sans JP', sans-serif;
     --roboto-font: 'Roboto', sans-serif;
+
+     /* font-sizes*/
+     --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+     --fs-800: 2.2rem;
+     --fs-700: 2rem;
+     --fs-600: 1rem;
+     --fs-500: 1rem;
+     --fs-400: 0.6375rem;
+     --fs-300: 1rem;
+     --fs-200: 0.875rem;
     }
+
+    @media (min-width: 35em) {
+        :root {
+            --fs-800: 5rem;
+            --fs-700: 3rem;
+            --fs-600: 1.5rem;
+            --fs-500: 1.25rem;
+            --fs-400: 1rem;
+        }
+    }
+    
+    @media (min-width: 65em) {
+        :root {
+            /* font-sizes */
+            --fs-800: 6rem;
+            --fs-700: 4.4rem;
+            --fs-600: 2rem;
+            --fs-500: 1.75rem;
+            --fs-400: 1.125rem;
+        }
+    }
+
+/* Typography */
+
+.font-white { color: var(--white-color); }
+.font-lt-gray { color: var(--lt-gray-color); }
+.font-dk-gray { color: var(--dk-gray-color); }
+.font-blue { color: var(--blue-color); }
+.font-dkr-gray { color: var(--dkr-gray-color); }
+
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200); }
+
+.italic { font-style: italic; }
+.bold { font-weight: bold; }
+.bold900 { font-weight:900; }
+.roboto { font-family: var(--roboto-font); }
+.noto { font-family: var(--noto-font); }
+
+.bg-red { background-color: var(--red-color); }
 
 /* Utility Classes */
 
@@ -46,13 +108,23 @@
     list-style: none;
 }
 
-.roboto {
-    font-family: var(--roboto-font);
+.container {
+    padding-inline: 1em;
+    margin-inline: auto;
+    max-width: 60rem;
 }
 
-.noto {
-    font-family: var(--noto-font);
+.grid-container {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding-inline: 1rem;
+
 }
+.text-align { text-align: center; }
+.justify { justify-content: center; }
+.item-align { align-items:center;}
+.place-center { place-items: center;}
 
 /* General */
 
@@ -61,55 +133,104 @@
     padding: 0;
 }
 .logo-bar {
-    height: 125px;
+    height: 5rem;
+    padding: .5rem;
+    justify-content: space-around;
 }
+.logo {
+    padding-right: .5rem;
+}
+.blue-phone {
+    border: solid 2px var(--dk-blue-color);
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.toggle-button {
+    background: var(--dk-blue-color) url(assets/icon-hamburger.svg) center center no-repeat;
+    width: 2rem;
+    height: 2rem;
+   
+}
+
 .お問い合わせ {
-    background: var(--unnamed-color-ed1c22);
-    color: var(--unnamed-color-ffffff);
-    height: 44px;
-    font-size: 16px;
     text-align: center;
-    width: 191px;
-    padding-top: 7px;
+    border-radius: .1rem;
 }
 
 nav ul li a {
     font-weight: bold;
     margin-right: 1em;
-    padding-right: 1em;
+    padding-right: 1rem;
     border-right: 1px rgb(200, 200, 200) solid;
-    color: var(--unnamed-color-333333);
-    
+    color: var(--dkr-gray-color);
+    text-decoration: none;
+}
+.hidden {
+    display: none;
 }
 
 header .main-banner {
     width: 100%;
-    height: 350px;
+    height: 18rem;
     background-size: cover;
-    background-position: center;
-    background: transparent url("./Assets/banner-mobile.png") no-repeat;
+    background: url("./Assets/banner-mobile1.png") no-repeat;
     opacity: 1;
 }
 
 .banner-text {
-    width: 351px;
-    height: 92px;
-    color: var(--unnamed-color-ffffff);
     text-align: left;
     letter-spacing: 3.5px;
-    color: #FFFFFF;
     opacity: 1;
+    padding: 1rem;
+}
+footer {
+    margin-top: 2rem;
 }
 
 .footer-banner {
     background: transparent url("./Assets/グループ 1826/グループ 1826-mobile.png") no-repeat;
 }
-
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 35em) {
+    .main-banner {
+        height: 22rem;
+        width: 100%;
+        background: url("./Assets/banner-tablet.png") no-repeat;
+        background-size: cover;
+        
+    }
+}
+@media only screen and (min-width: 65em) {
     header .main-banner {
-        background: url("./Assets/グループ 41@2x-desktop.png");
+        height: 25rem;
+        width: 100%;
+        background: url("./Assets/グループ 41@2x-desktop.png") no-repeat;
         background-position: center;
-        height: 550px;
+        background-size: cover;
+    }
+    .お問い合わせ {
+        height: 3vh;
+        width: 10rem;
+        padding: 0.5rem 0;
+        margin-left: 2rem;
+    }
+    .hidden {
+        display: block;
+    }
+    .logo-bar {
+        height: 5rem;
+        padding: .5rem;
+        justify-content: space-between;
+    }
+    .toggle-button {
+        display: none;
+    }
+    .main-nav {
+        justify-content: space-around;
+    }
+    .g-map {
+        width: 20rem; 
+        height: 17rem;
     }
     .footer-banner {
         background:  url("./Assets/グループ 1826/グループ\ 1826@2x-desktop.png") no-repeat;
