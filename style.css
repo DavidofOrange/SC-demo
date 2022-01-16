@@ -251,6 +251,13 @@ footer {
         padding-left: 6rem;
         padding-top: 5rem;
     }
+    .vision-image {
+        margin-bottom: -4rem;
+    }
+    .vision-container {
+        margin: 0 2rem;
+        padding: 1rem 1rem;   
+    }
 }
 @media (max-width: 65em) {
     .main-nav {
@@ -290,6 +297,9 @@ footer {
         width: 10rem;
         padding: 0.5rem 0;
         margin-left: 2rem;
+    }
+    .main-nav {
+        background-color: white;
     }
     .hidden {
         display: block;
