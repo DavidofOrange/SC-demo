@@ -116,7 +116,7 @@
 }
 
 .container {
-    padding-inline: 1em;
+    padding-inline: 1.5rem;
     margin-inline: auto;
     max-width: 60rem;
 }
@@ -139,14 +139,17 @@
     margin: 0;
     padding: 0;
 }
+
 .logo-bar {
     height: 5rem;
     padding: .5rem;
     justify-content: space-between;
 }
+
 .logo {
     padding-right: .5rem;
 }
+
 .blue-phone {
     border: solid 2px var(--dk-blue-color);
     width: 1.75rem;
@@ -164,6 +167,7 @@
     text-align: center;
     border-radius: .1rem;
 }
+
 .main-nav {
     --gap: clamp(1.5rem, 5vw, 3.5rem);
     gap: 2rem;
@@ -174,11 +178,8 @@
     backdrop-filter: blur(1.5rem);
 }
 
-
 nav ul li a {
     font-weight: bold;
-    margin-right: 1em;
-    padding-right: 1rem;
     border-right: 1px rgb(200, 200, 200) solid;
     color: var(--dkr-gray-color);
     text-decoration: none;
@@ -202,6 +203,14 @@ header .main-banner {
     letter-spacing: 3.5px;
     opacity: 1;
     padding: 1rem;
+}
+
+.greetings-image {
+    width: 16rem;
+    height: 20rem;
+    background: url("assets/グループ 1750/グループ\ 1750-mobile.png") no-repeat;
+    background-size: cover;
+
 }
 
 .vision-image {
@@ -271,6 +280,11 @@ footer {
         padding-left: 12rem;
         padding-top: 5rem;
     }
+    .blue-phone {
+        border: none;
+        padding-top: .3rem;
+        padding-right: .5rem;
+    }
     .お問い合わせ {
         height: 3vh;
         width: 10rem;
@@ -292,6 +306,31 @@ footer {
         justify-content: space-around;
         display: flex;
     }
+    nav ul li a {
+        padding-right: 0.5rem;
+    }
+    .nav-end {
+        border-right: none;
+    }
+
+    /* Greetings Section */
+    
+    .greetings-image {
+        width: 20rem;
+        height: 24rem;
+        background: url("assets/グループ 1750/グループ\ 1750@2x-desktop.png") no-repeat;
+        background-size: cover;
+        padding-top: 1rem;
+        float: left;
+        margin-right: 3.5rem;
+    }
+    .greetings-text {
+        padding: 5rem 0; 
+    }
+    .greetings-text p {
+        padding-bottom: 1rem;
+    }
+
     .vision-image {
         margin-bottom: -6rem;
     }
