@@ -59,6 +59,7 @@
 .font-lt-gray { color: var(--lt-gray-color); }
 .font-dk-gray { color: var(--dk-gray-color); }
 .font-blue { color: var(--blue-color); }
+.font-dk-blue { color: var(--dk-blue-color); }
 .font-dkr-gray { color: var(--dkr-gray-color); }
 
 .fs-900 { font-size: var(--fs-900); }
@@ -71,18 +72,24 @@
 .fs-200 { font-size: var(--fs-200); }
 
 .italic { font-style: italic; }
+
 .bold { font-weight: bold; }
 .bold900 { font-weight:900; }
+
 .roboto { font-family: var(--roboto-font); }
 .noto { font-family: var(--noto-font); }
+
 
 .bg-red { background-color: var(--red-color); }
 
 /* Utility Classes */
-
-.flex {
-    display: flex;
+.gap { gap: 1em; }
+.margin-1rem {
+    margin: 1rem 0;
 }
+.grid { display: grid; }
+
+.flex { display: flex; }
 
 .float-right {
     float: right;
@@ -135,7 +142,7 @@
 .logo-bar {
     height: 5rem;
     padding: .5rem;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .logo {
     padding-right: .5rem;
@@ -157,6 +164,16 @@
     text-align: center;
     border-radius: .1rem;
 }
+.main-nav {
+    --gap: clamp(1.5rem, 5vw, 3.5rem);
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: hsl( var(--clr-white) / 0.05);
+    backdrop-filter: blur(1.5rem);
+}
+
 
 nav ul li a {
     font-weight: bold;
@@ -176,6 +193,8 @@ header .main-banner {
     background-size: cover;
     background: url("./Assets/banner-mobile1.png") no-repeat;
     opacity: 1;
+    padding-left: 1rem;
+    padding-top: 1rem;
 }
 
 .banner-text {
@@ -183,6 +202,29 @@ header .main-banner {
     letter-spacing: 3.5px;
     opacity: 1;
     padding: 1rem;
+}
+
+.vision-image {
+    margin-top: 2rem;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+    margin-bottom: -2rem;
+}
+.vision-container {
+    background-color: white;
+    margin: 0 1rem;
+    
+}
+.company-info li {
+    border-bottom: solid var(--dk-blue-color) 1px;
+}
+.company-info-details li{
+    margin-left: 1rem;
+    border-bottom: solid var(--C4-gray-color) 1px;
+}
+.g-map {
+    height: 14rem;
 }
 footer {
     margin-top: 2rem;
@@ -192,21 +234,42 @@ footer {
     background: transparent url("./Assets/グループ 1826/グループ 1826-mobile.png") no-repeat;
 }
 @media only screen and (min-width: 35em) {
-    .main-banner {
-        height: 22rem;
+    header .main-banner {
+        height: 18rem;
         width: 100%;
         background: url("./Assets/banner-tablet.png") no-repeat;
         background-size: cover;
-        
+        padding-left: 6rem;
+        padding-top: 5rem;
     }
 }
+@media (max-width: 65em) {
+    .main-nav {
+        gap: 1em;
+        position: fixed;
+        z-index: 99999;
+        inset: 0 0 0 30%;
+        list-style: none;
+        padding: min(20rem, 15vh) 2rem;
+        margin: 0;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 500ms ease-in-out;
+    } 
+    .main-nav[data-expanded="true"] {
+        transform: translateX(0);
+    }
+}
+
 @media only screen and (min-width: 65em) {
     header .main-banner {
-        height: 25rem;
+        height: 22rem;
         width: 100%;
         background: url("./Assets/グループ 41@2x-desktop.png") no-repeat;
         background-position: center;
         background-size: cover;
+        padding-left: 12rem;
+        padding-top: 5rem;
     }
     .お問い合わせ {
         height: 3vh;
@@ -219,7 +282,7 @@ footer {
     }
     .logo-bar {
         height: 5rem;
-        padding: .5rem;
+        padding: 1rem;
         justify-content: space-between;
     }
     .toggle-button {
@@ -227,6 +290,14 @@ footer {
     }
     .main-nav {
         justify-content: space-around;
+        display: flex;
+    }
+    .vision-image {
+        margin-bottom: -6rem;
+    }
+    .vision-container {
+        margin: auto;
+        padding: 3rem 6rem;   
     }
     .g-map {
         width: 20rem; 
