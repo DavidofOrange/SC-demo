@@ -39,6 +39,7 @@
             --fs-600: 1.5rem;
             --fs-500: 1.25rem;
             --fs-400: 1rem;
+            --fs-200: 1rem;
         }
     }
     
@@ -50,6 +51,7 @@
             --fs-600: 2rem;
             --fs-500: 1.75rem;
             --fs-400: 1.125rem;
+            --fs-200: 1.1rem;
         }
     }
 
@@ -133,6 +135,8 @@
 .item-align { align-items:center;}
 .place-center { place-items: center;}
 
+.hidden { display: none; }
+
 /* General */
 
 * {
@@ -159,10 +163,10 @@
 }
 
 .toggle-button {
-    background: var(--dk-blue-color) url(assets/icon-hamburger.svg) center center no-repeat;
+    background: var(--dk-blue-color) url("assets/icon-hamburger.svg") center center no-repeat;
     width: 2rem;
     height: 2rem;
-   
+  
 }
 
 .お問い合わせ {
@@ -171,23 +175,17 @@
 }
 
 .main-nav {
-    --gap: clamp(1.5rem, 5vw, 3.5rem);
-    gap: 2rem;
     list-style: none;
-    padding: 0;
     margin: 0;
-    background: hsl( var(--clr-white) / 0.05);
+    background: hsl( var(--blue-color) / 0.05);
     backdrop-filter: blur(1.5rem);
+    padding-bottom: 1rem;
 }
 
 nav ul li a {
     font-weight: bold;
-    border-right: 1px rgb(200, 200, 200) solid;
     color: var(--dkr-gray-color);
     text-decoration: none;
-}
-.hidden {
-    display: none;
 }
 
 header .main-banner {
@@ -236,7 +234,6 @@ header .main-banner {
 .vision-container {
     background-color: white;
     margin: 0 1rem;
-    
 }
 
 /* Company Section */
@@ -284,7 +281,8 @@ footer {
     background: transparent url("./Assets/グループ 1826/グループ 1826-mobile.png") no-repeat;
 }
 
-@media only screen and (min-width: 35em) {
+
+@media (min-width: 35em) {
     header .main-banner {
         height: 18rem;
         width: 100%;
@@ -325,24 +323,39 @@ footer {
     }
 }
 @media (max-width: 65em) {
+    .toggle-button {
+        background: var(--dk-blue-color) url("assets/icon-hamburger.svg") center center no-repeat;
+        display: block;
+        z-index: 99999999999999999999999999999999999999;
+        width: 2rem;
+        height: 2rem;
+        background-position: center;
+        margin-left: .5rem;
+    }
+    .toggle-button[aria-expanded="true"] {
+        background-image: url("assets/icon-close.svg");  
+    }
+
     .main-nav {
-        gap: 1em;
         position: fixed;
         z-index: 99999;
-        inset: 0 0 0 30%;
+        inset: 0 0 0 20%;
         list-style: none;
-        padding: min(20rem, 15vh) 2rem;
+        padding: min(2rem, 2vh);
         margin: 0;
         flex-direction: column;
         transform: translateX(100%);
         transition: transform 500ms ease-in-out;
     } 
-    .main-nav[data-expanded="true"] {
+    .main-nav[data-visible="true"] {
         transform: translateX(0);
     }
 }
 
-@media only screen and (min-width: 65em) {
+@media (min-width: 65em) {
+    nav ul li a {
+        border-right: 1px rgb(200, 200, 200) solid;
+    }
     header .main-banner {
         height: 22rem;
         width: 100%;
