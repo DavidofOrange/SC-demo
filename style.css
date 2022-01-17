@@ -85,10 +85,13 @@
 .bg-red { background-color: var(--red-color); }
 
 /* Utility Classes */
+
+.display-block { display: block; }
+
 .gap { gap: 1em; }
-.margin-1rem {
-    margin: 3rem 0;
-}
+
+.margin-1rem { margin: 3rem 0; }
+
 .grid { display: grid; }
 
 .flex { display: flex; }
@@ -299,6 +302,12 @@ header .main-banner {
     height: 16rem;
     margin-top: 1rem;
 }
+
+.g-map-btn {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
 .map-text p {
     margin-top: 1rem;
 }
@@ -314,6 +323,7 @@ footer {
 }
 
 .footer-banner {
+    height: 18rem;
     background: transparent url("./Assets/グループ 1826/グループ 1826-mobile.png") no-repeat;
 }
 
@@ -481,6 +491,7 @@ footer {
     .footer-banner {
         margin-top: 15rem;
         background:  url("./Assets/グループ 1826/グループ\ 1826@2x-desktop.png") no-repeat;
+        
     }
 
     

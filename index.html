@@ -123,8 +123,8 @@
                 <div class="map-container">
                     <h3 class="font-blue map-location">本社</h3>
                     <iframe class="g-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.525589491184!2d139.7095722155353!3d35.68868173717018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ce9d918ae65%3A0x7dc8153ddc1e1fb8!2z44CSMTYwLTAwMjIgVG9reW8sIFNoaW5qdWt1IENpdHksIFNoaW5qdWt1LCAxLWNoxY1tZeKIkjjiiJIxIOWkp-api-W-oeiLkemnheODk-ODqyAz6ZqO!5e0!3m2!1sen!2sjp!4v1642208930770!5m2!1sen!2sjp"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <p class="fs-200 font-blue text-right">グーグルマップで開く<span>></span></p>
-                    <div class="fs-200 text-left map-text">
+                    <p class="fs-200 font-blue text-right">グーグルマップで開く<span class="g-map-btn">></span></p>
+                    <div class="fs-200 text-left map-text ">
                         <p>
                         〒160-0022<br> 東京都新宿区新宿1-8-1 大橋御苑駅ビル3階
                         </p>
@@ -137,7 +137,7 @@
                     <h3 class="font-blue map-location">営業所</h3>
                     <iframe class="g-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.525589491184!2d139.7095722155353!3d35.68868173717018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ce9d918ae65%3A0x7dc8153ddc1e1fb8!2z44CSMTYwLTAwMjIgVG9reW8sIFNoaW5qdWt1IENpdHksIFNoaW5qdWt1LCAxLWNoxY1tZeKIkjjiiJIxIOWkp-api-W-oeiLkemnheODk-ODqyAz6ZqO!5e0!3m2!1sen!2sjp!4v1642208930770!5m2!1sen!2sjp"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     <div class="">
-                        <p class="fs-200 font-blue text-right">グーグルマップで開く<span>></span></p>
+                        <p class="fs-200 font-blue text-right">グーグルマップで開く<span class="g-map-btn">></span></p>
                         <div class="text-left map-text fs-200">
                             <p>
                             〒160-0022<br> 東京都新宿区新宿1-8-1 大橋御苑駅ビル3階
@@ -156,23 +156,25 @@
     </main>
     <footer>
         <div class="footer-banner">
-            <div>
-                <img class="logo" src="./assets/グループ 1825-logo.svg" alt="logo">
-                <span>課題株式会社</span>
+            <div class="flex justify">
+                <img class="logo float-left" src="./assets/グループ 1825-logo.svg" alt="logo">
+                <span class="font-white fs-200 noto display-block">課題株式会社</span>
             </div>
-            <div>
-                <p>本社 住所が入ります住所が入ります住所が入ります</p>
-                <p>営業所 住所が入ります住所が入ります住所が入ります</p>
+            <div class="font-white flex justify">
+                <ul class="list-style-square">
+                    <li><p>本社<br> 住所が入ります住所が入ります住所が入ります</p></li>
+                    <li><p>営業所<br> 住所が入ります住所が入ります住所が入ります</p></li>
+                </ul>
             </div>
             <div>
                 <span><img src="assets/電話のアイコン (2)-white.svg" alt=""></span>
-                <h3>000-000-000</h3>
-                <h3>お問い合わせ</h3>
+                <h3 class="font-white">000-000-000</h3>
+                <h3 class="fs-400 bg-red font-white お問い合わせ">お問い合わせ</h3>
             </div>
         </div>
         <div>
             <nav class="">
-                <ul class="flex list-style-none noto">
+                <ul class="flex justify list-style-none noto gap fs-200">
                     <li><a href="#">ホーム</a></li>
                     <li><a href="#">選ばれる理由</a></li>
                     <li><a href="#">サービス紹介</a></li>
