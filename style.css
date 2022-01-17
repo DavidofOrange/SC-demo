@@ -118,7 +118,7 @@
 }
 
 .container {
-    padding-inline: 1.5rem;
+    padding-inline: 2rem;
     margin-inline: auto;
     max-width: 60rem;
 }
@@ -196,6 +196,7 @@ header .main-banner {
     opacity: 1;
     padding-left: 1rem;
     padding-top: 1rem;
+    margin-bottom: 6rem;
 }
 
 .banner-text {
@@ -210,16 +211,18 @@ header .main-banner {
 /* Greetings Section*/
 
 .greetings-grid {
-    display: grid; 
-    grid-template-rows: 20rem 20rem; 
-    grid-gap: 1rem;     
+    margin-bottom: 3rem;
 }
 
 .greetings-image {
-    width: 16rem;
-    height: 20rem;
+    width: 12rem;
+    height: 16rem;
     background: url("assets/グループ 1750/グループ\ 1750-mobile.png") no-repeat;
     background-size: cover;
+    padding: 1rem;
+}
+.greetings-text {
+    margin-top: 1rem;
 }
 
 /* Vision Section*/
@@ -227,13 +230,16 @@ header .main-banner {
 .vision-image {
     margin-top: 5rem;
     width: 100%;
-    z-index: -1;
+    height: 8rem;
     position: relative;
-    margin-bottom: -2rem;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    background: url("assets/マスクグループ 94/マスクグループ 94-mobile.png") no-repeat;
+    background-size: cover;
 }
 .vision-container {
-    background-color: white;
-    margin: 0 1rem;
+    background-color: var(--white-color);
 }
 
 /* Company Section */
@@ -300,10 +306,11 @@ footer {
     }
     .greetings-grid {
         display: grid;
-        grid-template-columns: 20rem 20rem;
+        grid-template-columns: 20rem auto;
     }
     .vision-image {
         margin-bottom: -4rem;
+        height: 22rem;
     }
     .vision-container {
         margin: 0 2rem;
@@ -402,24 +409,27 @@ footer {
     }
 
     /* Greetings Section */
-    
+    .greetings-grid {
+        display: grid;
+        grid-template-columns: 20rem 30rem;
+        column-gap: 2rem;
+        margin-inline: 1rem;
+    }
     .greetings-image {
-        width: 20rem;
-        height: 24rem;
+        width: 16rem;
+        height: 20rem;
         background: url("assets/グループ 1750/グループ\ 1750@2x-desktop.png") no-repeat;
         background-size: cover;
-        padding-top: 1rem;
-        margin-right: 3.5rem;
+        padding: 1rem;
     }
-    .greetings-text {
-        padding: 5rem 0; 
-    }
-    .greetings-text p {
-        padding-bottom: 1rem;
-    }
+ 
 
     .vision-image {
-        margin-bottom: -6rem;
+        height: 35rem;
+        width: 100%;
+        background: url("assets/マスクグループ 94/マスクグループ 94@2x-desktop.png") no-repeat;
+        background-size: cover;
+        
     }
     .vision-container {
         margin: auto;
