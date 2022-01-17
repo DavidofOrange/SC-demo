@@ -85,7 +85,7 @@
 /* Utility Classes */
 .gap { gap: 1em; }
 .margin-1rem {
-    margin: 1rem 0;
+    margin: 3rem 0;
 }
 .grid { display: grid; }
 
@@ -214,7 +214,7 @@ header .main-banner {
 }
 
 .vision-image {
-    margin-top: 2rem;
+    margin-top: 5rem;
     width: 100%;
     z-index: -1;
     position: relative;
@@ -231,6 +231,25 @@ header .main-banner {
 .company-info-details li{
     margin-left: 1rem;
     border-bottom: solid var(--C4-gray-color) 1px;
+}
+
+.company-grid {
+    display: grid;
+    grid-template-columns: 5rem auto;
+    column-gap: .5rem;
+    margin-inline: 1rem;
+}
+.company-grid ul li {
+    padding: 1rem 0;
+    border-bottom: 1px solid;
+}
+.company-grid .company-info1 li {
+    border-color: var(--blue-color);
+    font-size: .8rem;
+}
+.company-grid .company-info2 li {
+    border-color: var(--C4-gray-color);
+    font-size: .8rem;
 }
 .g-map {
     height: 14rem;
@@ -257,6 +276,18 @@ footer {
     .vision-container {
         margin: 0 2rem;
         padding: 1rem 1rem;   
+    }
+    .company-grid {
+        display: grid;
+        grid-template-columns: 10rem auto;
+        column-gap: 1rem;
+        margin-inline: 2rem;
+    }
+    .company-grid .company-info1 li {
+        font-size: 1rem;
+    }
+    .company-grid .company-info2 li {
+        font-size: 1rem;
     }
 }
 @media (max-width: 65em) {
@@ -348,6 +379,7 @@ footer {
         margin: auto;
         padding: 3rem 6rem;   
     }
+    
     .g-map {
         width: 20rem; 
         height: 17rem;
