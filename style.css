@@ -113,9 +113,9 @@
     text-decoration: none;
 }
 
-.list-style-none {
-    list-style: none;
-}
+.list-style-none { list-style: none; }
+
+.list-style-square { list-style-type: square; }
 
 .container {
     padding-inline: 2rem;
@@ -273,6 +273,34 @@ header .main-banner {
 
 /* Access Section */
 
+.map-container {
+    border: solid 1px yellow ;
+    width: 20rem;
+    height: 25rem;
+   
+}
+.map-box-1 {
+    float: left;
+}
+
+.map-location {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.map-location::after {
+    content: '';
+    height: 4px;
+    width: 50%;
+    background: var(--blue-color);
+    position: absolute;
+    left: calc(40% - 10%);
+    bottom: 0;
+    
+
+}
+
 .g-map {
     height: 14rem;
 }
@@ -423,7 +451,6 @@ footer {
         padding: 1rem;
     }
  
-
     .vision-image {
         height: 35rem;
         width: 100%;
