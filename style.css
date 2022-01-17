@@ -29,7 +29,7 @@
      --fs-500: 1rem;
      --fs-400: 0.6375rem;
      --fs-300: 1rem;
-     --fs-200: 0.875rem;
+     --fs-200: 0.775rem;
     }
 
     @media (min-width: 35em) {
@@ -118,7 +118,7 @@
 .list-style-square { list-style-type: square; }
 
 .container {
-    padding-inline: 2rem;
+    padding-inline: 1rem;
     margin-inline: auto;
     max-width: 60rem;
 }
@@ -130,6 +130,8 @@
     padding-inline: 1rem;
 
 }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
 .text-align { text-align: center; }
 .justify { justify-content: center; }
 .item-align { align-items:center;}
@@ -264,23 +266,16 @@ header .main-banner {
 }
 .company-grid .company-info1 li {
     border-color: var(--blue-color);
-    font-size: .8rem;
 }
 .company-grid .company-info2 li {
     border-color: var(--C4-gray-color);
-    font-size: .8rem;
 }
 
 /* Access Section */
 
 .map-container {
-    border: solid 1px yellow ;
     width: 20rem;
-    height: 25rem;
-   
-}
-.map-box-1 {
-    float: left;
+    height: 28rem; 
 }
 
 .map-location {
@@ -297,18 +292,25 @@ header .main-banner {
     position: absolute;
     left: calc(40% - 10%);
     bottom: 0;
-    
-
 }
 
 .g-map {
-    height: 14rem;
+    width: 90%; 
+    height: 16rem;
+    margin-top: 1rem;
+}
+.map-text p {
+    margin-top: 1rem;
+}
+
+.map-text ul li {
+  margin-left: 1.2rem;
 }
 
 /* Footer */
 
 footer {
-    margin-top: 2rem;
+    margin-top: 10rem;
 }
 
 .footer-banner {
@@ -355,6 +357,12 @@ footer {
     }
     .company-grid .company-info2 li {
         font-size: 1rem;
+    }
+    .map-box {
+        display: flex;
+        justify-content: space-around;
+
+       
     }
 }
 @media (max-width: 65em) {
@@ -463,11 +471,15 @@ footer {
         padding: 3rem 6rem;   
     }
     
+    
+
     .g-map {
         width: 20rem; 
         height: 17rem;
+        margin-top: 1rem;
     }
     .footer-banner {
+        margin-top: 15rem;
         background:  url("./Assets/グループ 1826/グループ\ 1826@2x-desktop.png") no-repeat;
     }
 
