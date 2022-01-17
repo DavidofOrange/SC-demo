@@ -140,6 +140,8 @@
     padding: 0;
 }
 
+/* Header */
+
 .logo-bar {
     height: 5rem;
     padding: .5rem;
@@ -205,13 +207,24 @@ header .main-banner {
     padding: 1rem;
 }
 
+/* Main */
+
+/* Greetings Section*/
+
+.greetings-grid {
+    display: grid; 
+    grid-template-rows: 20rem 20rem; 
+    grid-gap: 1rem;     
+}
+
 .greetings-image {
     width: 16rem;
     height: 20rem;
     background: url("assets/グループ 1750/グループ\ 1750-mobile.png") no-repeat;
     background-size: cover;
-
 }
+
+/* Vision Section*/
 
 .vision-image {
     margin-top: 5rem;
@@ -225,6 +238,9 @@ header .main-banner {
     margin: 0 1rem;
     
 }
+
+/* Company Section */
+
 .company-info li {
     border-bottom: solid var(--dk-blue-color) 1px;
 }
@@ -251,9 +267,15 @@ header .main-banner {
     border-color: var(--C4-gray-color);
     font-size: .8rem;
 }
+
+/* Access Section */
+
 .g-map {
     height: 14rem;
 }
+
+/* Footer */
+
 footer {
     margin-top: 2rem;
 }
@@ -261,6 +283,7 @@ footer {
 .footer-banner {
     background: transparent url("./Assets/グループ 1826/グループ 1826-mobile.png") no-repeat;
 }
+
 @media only screen and (min-width: 35em) {
     header .main-banner {
         height: 18rem;
@@ -269,6 +292,17 @@ footer {
         background-size: cover;
         padding-left: 6rem;
         padding-top: 5rem;
+    }
+   
+    .greetings-image {
+        width: 16rem;
+        height: 20rem;
+        background: url("assets/グループ 1750/グループ\ 1750-mobile.png") no-repeat;
+        background-size: cover;
+    }
+    .greetings-grid {
+        display: grid;
+        grid-template-columns: 20rem 20rem;
     }
     .vision-image {
         margin-bottom: -4rem;
@@ -362,7 +396,6 @@ footer {
         background: url("assets/グループ 1750/グループ\ 1750@2x-desktop.png") no-repeat;
         background-size: cover;
         padding-top: 1rem;
-        float: left;
         margin-right: 3.5rem;
     }
     .greetings-text {
