@@ -342,11 +342,6 @@ header .main-banner {
     margin-top: 1rem;
 }
 
-.g-map-btn {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-}
-
 .map-text {
     padding: 1rem;
 }
@@ -357,8 +352,7 @@ header .main-banner {
 
 .map-text ul li {
     margin-left: 1rem;
-    list-style: none;
-    
+    list-style: none;  
 }
 
 .blue-bullet li::before {
@@ -502,6 +496,10 @@ footer {
 }
 
 @media (min-width: 65em) {
+    .hidden {
+        display: block;
+    }
+
     /* header section*/
     nav ul li a {
         border-right: 1px rgb(200, 200, 200) solid;
@@ -532,9 +530,6 @@ footer {
     .main-nav {
         background-color: white;
         padding-bottom: 1rem;
-    }
-    .hidden {
-        display: block;
     }
     .logo-bar {
         height: 5rem;
