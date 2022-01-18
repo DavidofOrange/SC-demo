@@ -16,12 +16,12 @@
     --br-red-color: #FF0909;
     --black-color: #000000;
 
-    /*fonts*/
+     /* fonts */
 
     --noto-font: 'Noto Sans JP', sans-serif;
     --roboto-font: 'Roboto', sans-serif;
-
-     /* font-sizes*/
+   
+     /* font-sizes */
      --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
      --fs-800: 3rem;
      --fs-700: 1.5rem;
@@ -30,16 +30,29 @@
      --fs-400: .8rem;
      --fs-300: .7rem;
      --fs-200: .675rem;
+
+      /* letter-spacing */
+     --spacing-3: .07rem;
+     --spacing-2: .05rem;
+     --spacing-1: .03rem;
+
     }
 
     @media (min-width: 35em) {
         :root {
+            /* font-sizes */
             --fs-800: 5rem;
             --fs-700: 2.5rem;
             --fs-600: 1.5rem;
             --fs-500: 1.25rem;
             --fs-400: 1rem;
             --fs-200: .8rem;
+
+            /* letter-spacing */
+
+            --spacing-3: .12rem;
+            --spacing-2: .1rem;
+            --spacing-1: .06rem;
         }
     }
     
@@ -52,8 +65,15 @@
             --fs-500: 1.75rem;
             --fs-400: 1.125rem;
             --fs-200: 1rem;
+
+            /*letter-spacing*/
+
+            --spacing-3: .2rem;
+            --spacing-2: .15rem;
+            --spacing-1: .09rem;
         }
     }
+
 
 /* Typography */
 
@@ -82,6 +102,10 @@
 .noto { font-family: var(--noto-font); }
 
 
+.spacing-1 { letter-spacing: var(--spacing-1); }
+.spacing-2 { letter-spacing: var(--spacing-2); }
+.spacing-3 { letter-spacing: var(--spacing-3); }
+
 .bg-red { background-color: var(--red-color); }
 .bg-dk-blue { background-color: var(--dk-blue-color); }
 
@@ -91,7 +115,7 @@
 
 .gap { gap: 1em; }
 
-.margin-1rem { margin: 3rem 0; }
+.margin-1 { margin: 3rem 0; }/********/
 
 .grid { display: grid; }
 
@@ -200,7 +224,6 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    letter-spacing: .1rem;
 }
 .main-nav a {
     color: var(--white-color);
@@ -250,18 +273,18 @@ header .main-banner {
 /* Vision Section*/
 
 .vision-image {
-  
     width: 100%;
     height: 8rem;
     position: relative;
     z-index: -1;
-    margin: 0;
-    padding: 0;
+   
     background: url("assets/マスクグループ 94/マスクグループ 94-mobile.png") no-repeat;
     background-size: cover;
+    margin-bottom: -4rem;
 }
 .vision-container {
     background-color: var(--white-color);
+    margin-inline: .5rem;
 }
 
 /* Company Section */
@@ -342,11 +365,13 @@ header .main-banner {
 
 footer {
     margin-top: 10rem;
+    width: 100%;
 }
 
 .footer-banner {
     background: transparent url("./Assets/グループ 1826/グループ 1826-mobile.png") no-repeat;
     background-size: cover;
+    padding-inline: 1rem;
 }
 
 .footer-logo {
@@ -359,6 +384,8 @@ footer {
    padding-right: 1rem;
 }
 
+
+
 .footer-nav {
     height: 8rem;
     padding-top: 1.5rem;
@@ -366,6 +393,10 @@ footer {
 
 .footer-nav a {
     color: var(--white-color);
+}
+.foot-note {
+    padding: 1rem 0;
+    font-size: .7rem;
 }
 
 @media (min-width: 35em) {
@@ -441,6 +472,12 @@ footer {
     } 
     .main-nav[data-visible="true"] {
         transform: translateX(0);
+    }
+    .footer-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: auto;
+        text-align: center;
     }
 }
 
