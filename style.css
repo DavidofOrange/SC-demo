@@ -269,7 +269,7 @@ main section {
     z-index: -1;
     background: url("assets/マスクグループ 94/マスクグループ 94-mobile.png") no-repeat;
     background-size: cover;
-    margin-bottom: -4rem;
+    margin-bottom: -3rem;
 }
 
 .vision-container {
@@ -315,11 +315,6 @@ main section {
     height: 30rem; 
 }
 
-.map-box {
-    justify-content: center;
-
-}
-
 .map-location-1 {
     display: inline-block;
     position: relative;
@@ -353,8 +348,8 @@ main section {
 }
 
 .g-map {
-    width: 90%; 
-    height: 16rem;
+    width: 88%; 
+    height: 17rem;
     margin-top: 1rem;
 }
 
@@ -368,7 +363,7 @@ main section {
 }
 
 .map-text {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .map-text p {
@@ -434,6 +429,9 @@ footer {
     }
     .greetings-image {
         margin-inline: auto;
+    }
+    .vision-container {
+        padding-top: .01rem;
     }
 }
 
