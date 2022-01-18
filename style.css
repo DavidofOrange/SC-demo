@@ -192,14 +192,18 @@ main section {
     margin: 0;
     background: hsl( var(--blue-color) / 0.05);
     background-color: var(--dk-blue-color);
+    
+}
+nav ul li {
     padding-bottom: 1rem;
 }
 
 nav ul li a {
     text-decoration: none;
+    letter-spacing: .1rem;
 }
 .main-nav a {
-    color: var(--dkr-gray-color);
+    color: var(--white-color);
     font-weight: 600;
 }
 
@@ -429,7 +433,7 @@ footer {
         z-index: 99999;
         inset: 0 0 0 20%;
         list-style: none;
-        padding: min(2rem, 2vh);
+        padding: min(2rem, 5vh);
         margin: 0;
         flex-direction: column;
         transform: translateX(100%);
@@ -437,13 +441,16 @@ footer {
     } 
     .main-nav[data-visible="true"] {
         transform: translateX(0);
-        color: white !important;
     }
 }
 
 @media (min-width: 65em) {
     nav ul li a {
         border-right: 1px rgb(200, 200, 200) solid;
+    }
+
+    .main-nav a {
+        color: var(--dk-gray-color);
     }
     header .main-banner {
         height: 22rem;
@@ -467,6 +474,7 @@ footer {
     }
     .main-nav {
         background-color: white;
+        padding-bottom: 1rem;
     }
     .hidden {
         display: block;
