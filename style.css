@@ -83,6 +83,7 @@
 
 
 .bg-red { background-color: var(--red-color); }
+.bg-dk-blue { background-color: var(--dk-blue-color); }
 
 /* Utility Classes */
 
@@ -136,9 +137,12 @@
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 .text-align { text-align: center; }
-.justify { justify-content: center; }
 .item-align { align-items:center;}
 .place-center { place-items: center;}
+.justify { justify-content: center; }
+.space-around { justify-content: space-around; }
+.space-between { justify-content: space-between; }
+.space-evenly { justify-content: space-evenly; }
 
 .hidden { display: none; }
 
@@ -188,9 +192,11 @@
 }
 
 nav ul li a {
-    font-weight: bold;
-    color: var(--dkr-gray-color);
     text-decoration: none;
+}
+.main-nav a {
+    color: var(--dkr-gray-color);
+    font-weight: 600;
 }
 
 header .main-banner {
@@ -327,6 +333,26 @@ footer {
     background: transparent url("./Assets/グループ 1826/グループ 1826-mobile.png") no-repeat;
 }
 
+.footer-logo {
+    padding: 2rem 0;
+}
+
+.footer-list li {
+   padding-bottom: 1rem;
+   border-right: white 1px solid;
+   padding-right: 1rem;
+}
+
+.footer-nav {
+    height: 3.5rem;
+    padding-top: 1.5rem;
+}
+
+.footer-nav a {
+    color: var(--white-color);
+}
+
+
 
 @media (min-width: 35em) {
     header .main-banner {
@@ -455,6 +481,7 @@ footer {
     }
 
     /* Greetings Section */
+
     .greetings-grid {
         display: grid;
         grid-template-columns: 20rem 30rem;
@@ -468,31 +495,29 @@ footer {
         background-size: cover;
         padding: 1rem;
     }
- 
     .vision-image {
         height: 35rem;
         width: 100%;
         background: url("assets/マスクグループ 94/マスクグループ 94@2x-desktop.png") no-repeat;
         background-size: cover;
-        
     }
     .vision-container {
         margin: auto;
         padding: 3rem 6rem;   
     }
-    
-    
-
     .g-map {
         width: 20rem; 
         height: 17rem;
         margin-top: 1rem;
     }
     .footer-banner {
+        height: 22rem;
         margin-top: 15rem;
         background:  url("./Assets/グループ 1826/グループ\ 1826@2x-desktop.png") no-repeat;
-        
     }
-
-    
+    .footer-list li {
+        padding-bottom: 1rem;
+        border-right: white 1px solid;
+        padding-right: 4rem;
+     }
 }
