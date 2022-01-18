@@ -161,6 +161,8 @@
 
 .hidden { display: none; }
 
+
+
 main section {
     margin-bottom: 5rem;
 }
@@ -342,6 +344,15 @@ header .main-banner {
     margin-top: 1rem;
 }
 
+.right-arrow {
+    border: solid var(--blue-color);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3.6px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
 .map-text {
     padding: 1rem;
 }
@@ -455,6 +466,9 @@ footer {
         display: flex;
         justify-content: space-between;
         padding-inline: 1.5rem;
+    }
+    .right-arrow {
+        padding: 4.6px;
     }
 }
 @media (max-width: 65em) {
@@ -576,6 +590,9 @@ footer {
         width: 20rem; 
         height: 17rem;
         margin-top: 1rem;
+    }
+    .right-arrow {
+        padding: 5.5px;
     }
     /* footer section */
     .footer-banner {
