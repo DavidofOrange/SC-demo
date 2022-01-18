@@ -24,18 +24,18 @@
      /* font-sizes*/
      --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
      --fs-800: 3rem;
-     --fs-700: 2rem;
+     --fs-700: 1.5rem;
      --fs-600: 1.3rem;
      --fs-500: 1rem;
-     --fs-400: 0.6375rem;
-     --fs-300: 1rem;
-     --fs-200: 0.675rem;
+     --fs-400: .8rem;
+     --fs-300: .7rem;
+     --fs-200: .675rem;
     }
 
     @media (min-width: 35em) {
         :root {
             --fs-800: 5rem;
-            --fs-700: 3rem;
+            --fs-700: 2.5rem;
             --fs-600: 1.5rem;
             --fs-500: 1.25rem;
             --fs-400: 1rem;
@@ -47,7 +47,7 @@
         :root {
             /* font-sizes */
             --fs-800: 6rem;
-            --fs-700: 4.4rem;
+            --fs-700: 4rem;
             --fs-600: 2rem;
             --fs-500: 1.75rem;
             --fs-400: 1.125rem;
@@ -238,6 +238,10 @@ header .main-banner {
 .greetings-text {
     margin-top: 1rem;
 }
+.greetings-name {
+    padding-top: 1rem;
+}
+
 
 /* Vision Section*/
 
@@ -289,7 +293,10 @@ header .main-banner {
     width: 20rem;
     height: 28rem; 
 }
+.map-box {
+    justify-content: center;
 
+}
 .map-location {
     display: inline-block;
     position: relative;
@@ -316,7 +323,9 @@ header .main-banner {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
 }
-
+.map-text {
+    padding: 1rem;
+}
 .map-text p {
     margin-top: 1rem;
 }
@@ -397,9 +406,8 @@ footer {
     }
     .map-box {
         display: flex;
-        justify-content: space-around;
-
-       
+        justify-content: space-between;
+        padding-inline: 1.5rem;
     }
 }
 @media (max-width: 65em) {
