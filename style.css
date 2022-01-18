@@ -243,10 +243,6 @@ header .main-banner {
 
 /* greetings section */
 
-.greetings-grid {
-    margin-bottom: 3rem;
-}
-
 .greetings-image {
     width: 12rem;
     height: 16rem;
@@ -413,6 +409,15 @@ footer {
     padding: 1rem 0;
     font-size: .7rem;
 }
+@media (max-width: 700px) {
+    .greetings-grid {
+        margin-bottom: 3rem;
+    }
+    .greetings-image {
+        margin-inline: auto;
+    }
+}
+
 
 @media (min-width: 35em) {
     /*header section*/
@@ -434,6 +439,7 @@ footer {
     .greetings-grid {
         display: grid;
         grid-template-columns: 20rem auto;
+        margin-inline: 1rem;
     }
     /*vision section*/
     .vision-image {
@@ -492,6 +498,7 @@ footer {
     .main-nav[data-visible="true"] {
         transform: translateX(0);
     }
+    
     /* footer section */
     .footer-nav {
         display: grid;
@@ -556,10 +563,7 @@ footer {
     }
     /* greetings section */
     .greetings-grid {
-        display: grid;
         grid-template-columns: 20rem 30rem;
-        column-gap: 2rem;
-        margin-inline: 1rem;
     }
     .greetings-image {
         width: 16rem;
