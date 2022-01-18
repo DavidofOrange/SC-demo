@@ -161,12 +161,6 @@
 
 .hidden { display: none; }
 
-
-
-main section {
-    margin-bottom: 5rem;
-}
-
 /* components */
 
 * {
@@ -245,6 +239,10 @@ header .main-banner {
 
 /* greetings section */
 
+main section {
+    margin-bottom: 5rem;
+}
+
 .greetings-image {
     width: 12rem;
     height: 16rem;
@@ -313,8 +311,8 @@ header .main-banner {
 /* access section */
 
 .map-container {
-    width: 20rem;
-    height: 28rem; 
+    width: 23rem;
+    height: 30rem; 
 }
 
 .map-box {
@@ -322,19 +320,35 @@ header .main-banner {
 
 }
 
-.map-location {
+.map-location-1 {
     display: inline-block;
     position: relative;
     padding-bottom: 1rem;
 }
 
-.map-location::after {
+.map-location-1::after {
+    content: '';
+    height: 4px;
+    width: 70%;
+    background: var(--blue-color);
+    position: absolute;
+    left: calc(40% - 25%);
+    bottom: 0;
+}
+
+.map-location-2 {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.map-location-2::after {
     content: '';
     height: 4px;
     width: 50%;
     background: var(--blue-color);
     position: absolute;
-    left: calc(40% - 10%);
+    left: calc(40% - 15%);
     bottom: 0;
 }
 
@@ -433,6 +447,9 @@ footer {
         padding-left: 6rem;
         padding-top: 5rem;
     }
+    main section {
+        margin: 8rem 0;
+    }
     /*greetings section*/
     .greetings-image {
         width: 16rem;
@@ -513,14 +530,7 @@ footer {
     .hidden {
         display: block;
     }
-
     /* header section*/
-    nav ul li a {
-        border-right: 1px rgb(200, 200, 200) solid;
-    }
-    .main-nav a {
-        color: var(--dk-gray-color);
-    }
     header .main-banner {
         height: 22rem;
         width: 100%;
@@ -541,10 +551,6 @@ footer {
         padding: 0.5rem 0;
         margin-left: 2rem;
     }
-    .main-nav {
-        background-color: white;
-        padding-bottom: 1rem;
-    }
     .logo-bar {
         height: 5rem;
         padding: 1rem;
@@ -553,12 +559,17 @@ footer {
     .toggle-button {
         display: none;
     }
-    .main-nav {
-        justify-content: space-around;
-        display: flex;
-    }
     nav ul li a {
-        padding-right: 0.5rem;
+        border-right: 1px rgb(200, 200, 200) solid;
+    }
+    .main-nav a {
+        color: var(--dk-gray-color);
+        padding-right: 1rem;
+    }
+    .main-nav {
+        background-color: white;
+        justify-content: space-evenly;
+        display: flex;
     }
     .nav-end {
         border-right: none;
@@ -587,8 +598,8 @@ footer {
     }
     /* access section */
     .g-map {
-        width: 20rem; 
-        height: 17rem;
+        width: 23rem; 
+        height: 20rem;
         margin-top: 1rem;
     }
     .right-arrow {
@@ -597,7 +608,7 @@ footer {
     /* footer section */
     .footer-banner {
         height: 22rem;
-        margin-top: 12rem;
+        margin-top: 20rem;
         background:  url("./Assets/グループ 1826/グループ\ 1826@2x-desktop.png") no-repeat;
     }
     .footer-list li {
@@ -605,7 +616,16 @@ footer {
         border-right: white 1px solid;
         padding-right: 4rem;
      }
+     .footer-nav li a {
+         padding-right: 1rem;
+     }
      .お問い合わせ-footer {
          width: 15rem;
      }
+}
+
+@media (min-width: 45em) {
+    .main-nav a {
+        padding-right: .5rem;
+    }
 }
