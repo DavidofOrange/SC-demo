@@ -146,6 +146,10 @@
 
 .hidden { display: none; }
 
+main section {
+    margin-bottom: 5rem;
+}
+
 /* General */
 
 * {
@@ -187,7 +191,7 @@
     list-style: none;
     margin: 0;
     background: hsl( var(--blue-color) / 0.05);
-    backdrop-filter: blur(1.5rem);
+    background-color: var(--dk-blue-color);
     padding-bottom: 1rem;
 }
 
@@ -207,7 +211,6 @@ header .main-banner {
     opacity: 1;
     padding-left: 1rem;
     padding-top: 1rem;
-    margin-bottom: 6rem;
 }
 
 .banner-text {
@@ -239,7 +242,7 @@ header .main-banner {
 /* Vision Section*/
 
 .vision-image {
-    margin-top: 5rem;
+  
     width: 100%;
     height: 8rem;
     position: relative;
@@ -329,8 +332,8 @@ footer {
 }
 
 .footer-banner {
-    height: 18rem;
     background: transparent url("./Assets/グループ 1826/グループ 1826-mobile.png") no-repeat;
+    background-size: cover;
 }
 
 .footer-logo {
@@ -344,15 +347,13 @@ footer {
 }
 
 .footer-nav {
-    height: 3.5rem;
+    height: 8rem;
     padding-top: 1.5rem;
 }
 
 .footer-nav a {
     color: var(--white-color);
 }
-
-
 
 @media (min-width: 35em) {
     header .main-banner {
@@ -428,6 +429,7 @@ footer {
     } 
     .main-nav[data-visible="true"] {
         transform: translateX(0);
+        color: white !important;
     }
 }
 
@@ -512,12 +514,15 @@ footer {
     }
     .footer-banner {
         height: 22rem;
-        margin-top: 15rem;
+        margin-top: 12rem;
         background:  url("./Assets/グループ 1826/グループ\ 1826@2x-desktop.png") no-repeat;
     }
     .footer-list li {
         padding-bottom: 1rem;
         border-right: white 1px solid;
         padding-right: 4rem;
+     }
+     .お問い合わせ-footer {
+         width: 15rem;
      }
 }
