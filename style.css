@@ -2,7 +2,7 @@
 
 :root {
 
-    /* Colors */
+    /* colors */
 
     --white-color: #FFFFFF;
     --C4-gray-color: #C4C4C4;
@@ -75,7 +75,7 @@
     }
 
 
-/* Typography */
+/* typography */
 
 .font-white { color: var(--white-color); }
 .font-lt-gray { color: var(--lt-gray-color); }
@@ -109,37 +109,27 @@
 .bg-red { background-color: var(--red-color); }
 .bg-dk-blue { background-color: var(--dk-blue-color); }
 
-/* Utility Classes */
+/* utility classes */
 
 .display-block { display: block; }
 
 .gap { gap: 1em; }
 
-.margin-1 { margin: 3rem 0; }/********/
+.margin-1 { margin: 3rem 0; }
 
 .grid { display: grid; }
 
 .flex { display: flex; }
 
-.float-right {
-    float: right;
-}
+.float-right { float: right; }
 
-.float-left {
-    float: left;
-}
+.float-left { float: left; }
 
-.center-text {
-    text-align: center;
-}
+.center-text { text-align: center; }
 
-.center-items {
-    align-items: center;
-}
+.center-items { align-items: center; }
 
-.decoration-none {
-    text-decoration: none;
-}
+.decoration-none { text-decoration: none; }
 
 .list-style-none { list-style: none; }
 
@@ -158,6 +148,7 @@
     padding-inline: 1rem;
 
 }
+
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 .text-align { text-align: center; }
@@ -174,14 +165,14 @@ main section {
     margin-bottom: 5rem;
 }
 
-/* General */
+/* components */
 
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Header */
+/* header section */
 
 .logo-bar {
     height: 5rem;
@@ -215,9 +206,9 @@ main section {
     list-style: none;
     margin: 0;
     background: hsl( var(--blue-color) / 0.05);
-    background-color: var(--dk-blue-color);
-    
+    background-color: var(--dk-blue-color); 
 }
+
 nav ul li {
     padding-bottom: 1rem;
 }
@@ -225,6 +216,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
 }
+
 .main-nav a {
     color: var(--white-color);
     font-weight: 600;
@@ -247,9 +239,9 @@ header .main-banner {
     padding: 0.5rem;
 }
 
-/* Main */
+/* main */
 
-/* Greetings Section*/
+/* greetings section */
 
 .greetings-grid {
     margin-bottom: 3rem;
@@ -262,36 +254,39 @@ header .main-banner {
     background-size: cover;
     padding: 1rem;
 }
+
 .greetings-text {
     margin-top: 1rem;
 }
+
 .greetings-name {
     padding-top: 1rem;
 }
 
 
-/* Vision Section*/
+/* vision section */
 
 .vision-image {
     width: 100%;
     height: 8rem;
     position: relative;
     z-index: -1;
-   
     background: url("assets/マスクグループ 94/マスクグループ 94-mobile.png") no-repeat;
     background-size: cover;
     margin-bottom: -4rem;
 }
+
 .vision-container {
     background-color: var(--white-color);
     margin-inline: .5rem;
 }
 
-/* Company Section */
+/* company section */
 
 .company-info li {
     border-bottom: solid var(--dk-blue-color) 1px;
 }
+
 .company-info-details li{
     margin-left: 1rem;
     border-bottom: solid var(--C4-gray-color) 1px;
@@ -303,27 +298,32 @@ header .main-banner {
     column-gap: .5rem;
     margin-inline: 1rem;
 }
+
 .company-grid ul li {
     padding: 1rem 0;
     border-bottom: 1px solid;
 }
+
 .company-grid .company-info1 li {
     border-color: var(--blue-color);
 }
+
 .company-grid .company-info2 li {
     border-color: var(--C4-gray-color);
 }
 
-/* Access Section */
+/* access section */
 
 .map-container {
     width: 20rem;
     height: 28rem; 
 }
+
 .map-box {
     justify-content: center;
 
 }
+
 .map-location {
     display: inline-block;
     position: relative;
@@ -350,9 +350,11 @@ header .main-banner {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
 }
+
 .map-text {
     padding: 1rem;
 }
+
 .map-text p {
     margin-top: 1rem;
 }
@@ -361,7 +363,7 @@ header .main-banner {
   margin-left: 1.2rem;
 }
 
-/* Footer */
+/* footer section*/
 
 footer {
     margin-top: 10rem;
@@ -384,8 +386,6 @@ footer {
    padding-right: 1rem;
 }
 
-
-
 .footer-nav {
     height: 8rem;
     padding-top: 1.5rem;
@@ -394,12 +394,14 @@ footer {
 .footer-nav a {
     color: var(--white-color);
 }
+
 .foot-note {
     padding: 1rem 0;
     font-size: .7rem;
 }
 
 @media (min-width: 35em) {
+    /*header section*/
     header .main-banner {
         height: 18rem;
         width: 100%;
@@ -408,7 +410,7 @@ footer {
         padding-left: 6rem;
         padding-top: 5rem;
     }
-   
+    /*greetings section*/
     .greetings-image {
         width: 16rem;
         height: 20rem;
@@ -419,6 +421,7 @@ footer {
         display: grid;
         grid-template-columns: 20rem auto;
     }
+    /*vision section*/
     .vision-image {
         margin-bottom: -4rem;
         height: 22rem;
@@ -427,6 +430,7 @@ footer {
         margin: 0 2rem;
         padding: 1rem 1rem;   
     }
+    /* company section*/
     .company-grid {
         display: grid;
         grid-template-columns: 10rem auto;
@@ -439,6 +443,7 @@ footer {
     .company-grid .company-info2 li {
         font-size: 1rem;
     }
+    /*access section*/
     .map-box {
         display: flex;
         justify-content: space-between;
@@ -446,10 +451,11 @@ footer {
     }
 }
 @media (max-width: 65em) {
+    /* header section*/
     .toggle-button {
         background: var(--dk-blue-color) url("assets/icon-hamburger.svg") center center no-repeat;
         display: block;
-        z-index: 99999999999999999999999999999999999999;
+        z-index: 99999;
         width: 2rem;
         height: 2rem;
         background-position: center;
@@ -458,10 +464,9 @@ footer {
     .toggle-button[aria-expanded="true"] {
         background-image: url("assets/icon-close.svg");  
     }
-
     .main-nav {
         position: fixed;
-        z-index: 99999;
+        z-index: 999;
         inset: 0 0 0 20%;
         list-style: none;
         padding: min(2rem, 5vh);
@@ -473,6 +478,7 @@ footer {
     .main-nav[data-visible="true"] {
         transform: translateX(0);
     }
+    /* footer section */
     .footer-nav {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -482,10 +488,10 @@ footer {
 }
 
 @media (min-width: 65em) {
+    /* header section*/
     nav ul li a {
         border-right: 1px rgb(200, 200, 200) solid;
     }
-
     .main-nav a {
         color: var(--dk-gray-color);
     }
@@ -534,9 +540,7 @@ footer {
     .nav-end {
         border-right: none;
     }
-
-    /* Greetings Section */
-
+    /* greetings section */
     .greetings-grid {
         display: grid;
         grid-template-columns: 20rem 30rem;
@@ -550,6 +554,7 @@ footer {
         background-size: cover;
         padding: 1rem;
     }
+    /* vision section */
     .vision-image {
         height: 35rem;
         width: 100%;
@@ -560,11 +565,13 @@ footer {
         margin: auto;
         padding: 3rem 6rem;   
     }
+    /* access section */
     .g-map {
         width: 20rem; 
         height: 17rem;
         margin-top: 1rem;
     }
+    /* footer section */
     .footer-banner {
         height: 22rem;
         margin-top: 12rem;
