@@ -60,9 +60,9 @@
         :root {
             /* font-sizes */
             --fs-800: 6rem;
-            --fs-700: 4rem;
+            --fs-700: 3.13rem;
             --fs-600: 2rem;
-            --fs-500: 1.75rem;
+            --fs-500: 1.13rem;
             --fs-400: 1.125rem;
             --fs-200: 1rem;
 
@@ -148,7 +148,6 @@
     display: grid;
     place-items: center;
     padding-inline: 1rem;
-
 }
 
 .text-left { text-align: left; }
@@ -173,7 +172,7 @@
 /* header section */
 
 .logo-bar {
-    height: 5rem;
+    height: 3.6rem;
     padding: .5rem;
     justify-content: space-between;
 }
@@ -201,23 +200,16 @@
 }
 
 .main-nav {
-    list-style: none;
-    margin: 0;
-    background: hsl( var(--blue-color) / 0.05);
     background-color: var(--dk-blue-color); 
 }
 
 nav ul li {
-    padding-bottom: 1rem;
-}
-
-nav ul li a {
-    text-decoration: none;
+    padding-bottom: 1.5rem;
 }
 
 .main-nav a {
     color: var(--white-color);
-    font-weight: 600;
+    text-decoration: none;
 }
 
 header .main-banner {
@@ -243,6 +235,9 @@ header .main-banner {
 
 main section {
     margin-bottom: 5rem;
+}
+.greetings-grid {
+    margin-inline: .5rem;
 }
 
 .greetings-image {
@@ -311,6 +306,9 @@ main section {
 }
 
 /* access section */
+.map-box {
+   
+}
 
 .map-container {
     width: 23rem;
@@ -423,7 +421,7 @@ footer {
 
 .foot-note {
     padding: 1rem 0;
-    font-size: .7rem;
+    font-size: .75rem;
 }
 @media (max-width: 700px) {
     .greetings-grid {
@@ -559,21 +557,34 @@ footer {
     .toggle-button {
         display: none;
     }
-    nav ul li a {
-        border-right: 1px rgb(200, 200, 200) solid;
-    }
-    .main-nav a {
-        color: var(--dk-gray-color);
-        padding-right: 1rem;
-    }
+
     .main-nav {
         background-color: white;
-        justify-content: space-evenly;
         display: flex;
+        justify-content: center;
+        margin-inline: 1rem;
     }
-    .nav-end {
-        border-right: none;
+  
+    .main-nav a {
+        color: var(--dk-gray-color);
     }
+    
+    .main-nav > li {
+        padding-left: 1rem;
+        position: relative;
+    }
+    
+    .main-nav > li + li::after {
+        content: '';
+        background: rgb(226, 226, 226);
+        position: absolute;
+        bottom: 60%;
+        left: 0;
+        height: 35%;
+        width: 2px;
+
+    }
+  
     /* greetings section */
     .greetings-grid {
         grid-template-columns: 20rem 36rem;
