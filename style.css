@@ -101,6 +101,8 @@
 .roboto { font-family: var(--roboto-font); }
 .noto { font-family: var(--noto-font); }
 
+.line-height { line-height: 1.8;}
+
 
 .spacing-1 { letter-spacing: var(--spacing-1); }
 .spacing-2 { letter-spacing: var(--spacing-2); }
@@ -486,7 +488,7 @@ footer {
         padding: 4.6px;
     }
 }
-@media (max-width: 65em) {
+@media (max-width: 64.98em) {
     /* header section*/
     .toggle-button {
         background: var(--dk-blue-color) url("assets/icon-hamburger.svg") center center no-repeat;
@@ -574,14 +576,14 @@ footer {
     }
     /* greetings section */
     .greetings-grid {
-        grid-template-columns: 20rem 30rem;
+        grid-template-columns: 20rem 36rem;
+        column-gap: 3rem;
     }
     .greetings-image {
         width: 16rem;
         height: 20rem;
         background: url("assets/グループ 1750/グループ\ 1750@2x-desktop.png") no-repeat;
-        background-size: cover;
-        padding: 1rem;
+        background-size: cover; 
     }
     /* vision section */
     .vision-image {
