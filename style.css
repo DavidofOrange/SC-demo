@@ -306,9 +306,6 @@ main section {
 }
 
 /* access section */
-.map-box {
-   
-}
 
 .map-container {
     width: 23rem;
@@ -375,7 +372,7 @@ main section {
     list-style: none;  
 }
 
-.blue-bullet li::before {
+.blue-bullet::before {
     color: var(--blue-color);
     content: "\25AA";
     font-weight: bold;
@@ -383,8 +380,12 @@ main section {
     display: inline-block;
     margin-left: -1em;
     font-size: 1.5rem;
-    position:relative;
+    position: relative;
     top: .2em;
+}
+
+.indent {
+   text-indent: .5rem; 
 }
 
 /* footer section*/
@@ -629,6 +630,7 @@ footer {
      }
      .footer-nav li a {
          padding-right: 1rem;
+         text-decoration: none;
      }
      .お問い合わせ-footer {
          width: 15rem;
