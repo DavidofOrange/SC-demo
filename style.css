@@ -232,29 +232,30 @@ nav ul li {
 /* greetings section */
 
 main section {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 .greetings-grid {
-    margin-inline: .5rem;
+    display: grid;
+    place-items: center;
+   
+}
+
+.greetings-image-container {
+    display: relative;
 }
 
 .greetings-image {
     width: 12rem;
     height: 16rem;
-    background: url("assets/グループ 1750/グループ\ 1750-mobile.png") no-repeat;
+    background: url("assets/グループ 1750/グループ\ 1750-mobile.png");
     background-size: cover;
-    padding: 1rem;
-    margin-inline:auto;
-}
-
-.greetings-text {
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: absolute; 
 }
 
 .greetings-name {
     padding-top: 1rem;
 }
-
 
 /* vision section */
 
@@ -431,16 +432,6 @@ footer {
 }
 
 @media (max-width: 40em) {
-    .greetings-grid {
-        display: grid;
-        grid-template-rows: 1fr auto;
-        margin-inline: 1rem;
-        row-gap: 1.5rem;
-    }
-    .greetings-image {
-        margin-inline: auto;
-    }
-   
     .vision-container {
         padding-top: .01rem;
         margin-inline: 1rem;
@@ -460,19 +451,6 @@ footer {
     }
     main section {
         margin: 8rem 0;
-    }
-    /*greetings section*/
-    .greetings-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-inline: 1rem;
-        column-gap: 1.5rem;
-    }
-    .greetings-image {
-        width: 16rem;
-        height: 22rem;
-        background: url("assets/グループ 1750/グループ\ 1750-mobile.png") no-repeat;
-        background-size: cover;
     }
     /*vision section*/
     .vision-image {
@@ -506,6 +484,7 @@ footer {
     .main-nav a {
         padding-right: .5rem;
     }
+  
 }
 
 @media (max-width: 64.98em) {
@@ -537,7 +516,14 @@ footer {
     .main-nav[data-visible="true"] {
         transform: translateX(0);
     }
-    
+    .greetings-grid {
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .greetings-text {
+        width: 88%;
+        height: 100%;
+    }
     /* footer section */
     .footer-nav {
         display: grid;
@@ -615,14 +601,17 @@ footer {
   
     /* greetings section */
     .greetings-grid {
-        grid-template-columns: 20rem 36rem;
-        column-gap: 3rem;
-    }
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        }
     .greetings-image {
         width: 16rem;
         height: 22rem;
         background: url("assets/グループ 1750/グループ\ 1750@2x-desktop.png") no-repeat;
         background-size: cover; 
+    }
+    .greetings-text {
+        width: 36rem;
     }
     /* vision section */
     .vision-image {
