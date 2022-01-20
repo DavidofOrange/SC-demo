@@ -188,7 +188,8 @@
     border: solid 4px var(--dk-blue-color);
     width: 1.75rem;
     height: 1.5rem;
-    margin-top: 0.03rem;
+    
+    padding: .05rem;
    
 }
 
@@ -521,6 +522,7 @@ footer {
         height: 2rem;
         background-position: center;
         margin-left: .5rem;
+        border: solid 4px var(--dk-blue-color);
     }
     .toggle-button[aria-expanded="true"] {
         background-image: url("assets/icon-close.svg");  
