@@ -195,8 +195,8 @@
 
 .toggle-button {
     background: var(--dk-blue-color) url("assets/icon-hamburger.svg") center center no-repeat;
-    width: 2rem;
-    height: 2rem;
+    width: 2.8rem;
+    height: 2.5rem;
   
 }
 
