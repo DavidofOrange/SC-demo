@@ -185,16 +185,14 @@
 }
 
 .blue-phone {
-    border: solid 4px var(--dk-blue-color);
+    border: solid 4px var(--blue-color);
     width: 1.5rem;
-    height: 1.5rem;
-    
+    height: 1.4rem;
     padding: .05rem;
-   
 }
 
 .toggle-button {
-    background: var(--dk-blue-color) url("assets/icon-hamburger.svg") center center no-repeat;
+    background: var(--blue-color) url("assets/icon-hamburger.svg") center center no-repeat;
     width: 2.8rem;
     height: 2.5rem;
   
@@ -241,10 +239,6 @@ nav ul li {
 /* main */
 
 /* greetings section */
-
-main {
-    
-}
 
 main section {
     margin-bottom: 5rem;
@@ -515,14 +509,14 @@ footer {
 @media (max-width: 64.98em) {
     /* header section*/
     .toggle-button {
-        background: var(--dk-blue-color) url("assets/icon-hamburger.svg") center center no-repeat;
+        background: var(--blue-color) url("assets/icon-hamburger.svg") center center no-repeat;
         display: block;
         z-index: 99999;
         width: 2rem;
-        height: 2rem;
+        height: 1.9rem;
         background-position: center;
         margin-left: .5rem;
-        border: solid 4px var(--dk-blue-color);
+        border: solid 4px var(--blue-color);
     }
     .toggle-button[aria-expanded="true"] {
         background-image: url("assets/icon-close.svg");  
