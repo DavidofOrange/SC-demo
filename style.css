@@ -6,7 +6,7 @@
 
     --white-color: #FFFFFF;
     --C4-gray-color: #C4C4C4;
-    --C6-gray-color: #C6C6C6;
+    --C6-gray-color: #c6c6c6;
     --lt-gray-color: #9A9A9A;
     --dk-gray-color: #3E3E3E;
     --dkr-gray-color: #333333;
@@ -185,10 +185,14 @@
 }
 
 .blue-phone {
-    border: solid 2px var(--dk-blue-color);
+    border: solid 4px var(--dk-blue-color);
     width: 1.75rem;
     height: 1.5rem;
-    margin-top: .2rem;
+    margin-top: 0rem;
+    aspect-ratio: 1;
+    padding: .02rem;
+    box-shadow: 0 0 .09rem .03rem var(--lt-gray-color);
+    background-color: rgb(230, 234, 240);
 }
 
 .toggle-button {
@@ -651,6 +655,9 @@ footer {
     }
     .g-map-btn {
         margin-right: 3rem;
+    }
+    .gmap-text-container {
+        margin-inline: 2rem;
     }
     .right-arrow {
         padding: 5.5px;
