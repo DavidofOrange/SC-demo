@@ -513,7 +513,7 @@ footer {
         display: block;
         z-index: 99999;
         width: 2rem;
-        height: 1.9rem;
+        height: 2rem;
         background-position: center;
         margin-left: .5rem;
         border: solid 4px var(--blue-color);
