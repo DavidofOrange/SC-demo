@@ -61,10 +61,12 @@
             /* font-sizes */
             --fs-800: 4.38rem;
             --fs-700: 3.13rem;
+            --fs-650: 1.75rem;
             --fs-600: 1.38rem;
             --fs-500: 1.13rem;
             --fs-400: 1.125rem;
             --fs-200: 1rem;
+            --fs-100: 0.88rem;
 
             /*letter-spacing*/
 
@@ -87,11 +89,13 @@
 .fs-900 { font-size: var(--fs-900); }
 .fs-800 { font-size: var(--fs-800); }
 .fs-700 { font-size: var(--fs-700); }
+.fs-650 { font-size: var(--fs-650); }
 .fs-600 { font-size: var(--fs-600); }
 .fs-500 { font-size: var(--fs-500); }
 .fs-400 { font-size: var(--fs-400); }
 .fs-300 { font-size: var(--fs-300); }
 .fs-200 { font-size: var(--fs-200); }
+.fs-100 { font-size: var(--fs-100); }
 
 .italic { font-style: italic; }
 
@@ -101,8 +105,7 @@
 .roboto { font-family: var(--roboto-font); }
 .noto { font-family: var(--noto-font); }
 
-.line-height { line-height: 1.8;}
-
+.line-height { line-height: 2;}
 
 .spacing-1 { letter-spacing: var(--spacing-1); }
 .spacing-2 { letter-spacing: var(--spacing-2); }
@@ -184,7 +187,8 @@
 .blue-phone {
     border: solid 2px var(--dk-blue-color);
     width: 1.75rem;
-    height: 1.75rem;
+    height: 1.5rem;
+    margin-top: .2rem;
 }
 
 .toggle-button {
@@ -192,11 +196,6 @@
     width: 2rem;
     height: 2rem;
   
-}
-
-.お問い合わせ {
-    text-align: center;
-    border-radius: .1rem;
 }
 
 .main-nav {
@@ -212,9 +211,9 @@ nav ul li {
     text-decoration: none;
 }
 
-header .main-banner {
+.main-banner {
     width: 100%;
-    height: 12rem;
+    height: 18rem;
     background-size: cover;
     background: url("./Assets/banner-mobile1.png") no-repeat;
     opacity: 1;
@@ -246,10 +245,11 @@ main section {
     background: url("assets/グループ 1750/グループ\ 1750-mobile.png") no-repeat;
     background-size: cover;
     padding: 1rem;
+    margin-inline:auto;
 }
 
 .greetings-text {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .greetings-name {
@@ -403,7 +403,7 @@ footer {
 .footer-banner {
     background: transparent url("./Assets/グループ 1826/グループ 1826-mobile.png") no-repeat;
     background-size: cover;
-    padding-inline: 1rem;
+
 }
 
 .footer-logo {
@@ -429,18 +429,27 @@ footer {
     padding: 1rem 0;
     font-size: .75rem;
 }
-@media (max-width: 44em) {
+@media (max-width: 40em) {
+    .greetings-grid {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        margin-inline: 1rem;
+        row-gap: 1.5rem;
+        border: blue 2px solid;
+    }
     .greetings-image {
         margin-inline: auto;
     }
+   
     .vision-container {
         padding-top: .01rem;
+        margin-inline: 1rem;
     }
 }
 
 @media (min-width: 35em) {
     /*header section*/
-    header .main-banner {
+    .main-banner {
         height: 18rem;
         width: 100%;
         background: url("./Assets/banner-tablet.png") no-repeat;
@@ -452,16 +461,17 @@ footer {
         margin: 8rem 0;
     }
     /*greetings section*/
-    .greetings-image {
-        width: 16rem;
-        height: 20rem;
-        background: url("assets/グループ 1750/グループ\ 1750-mobile.png") no-repeat;
-        background-size: cover;
-    }
     .greetings-grid {
         display: grid;
-        grid-template-columns: 20rem auto;
+        grid-template-columns: 1fr 1fr;
         margin-inline: 1rem;
+        column-gap: 1.5rem;
+    }
+    .greetings-image {
+        width: 16rem;
+        height: 22rem;
+        background: url("assets/グループ 1750/グループ\ 1750-mobile.png") no-repeat;
+        background-size: cover;
     }
     /*vision section*/
     .vision-image {
@@ -531,7 +541,7 @@ footer {
         display: block;
     }
     /* header section*/
-    header .main-banner {
+    .main-banner {
         height: 22rem;
         width: 100%;
         background: url("./Assets/グループ 41@2x-desktop.png") no-repeat;
@@ -547,9 +557,11 @@ footer {
     }
     .お問い合わせ {
         height: 3vh;
-        width: 10rem;
-        padding: 0.5rem 0;
+        width: 12rem;
+        padding-top: .5rem;
         margin-left: 2rem;
+        text-align: center;
+        border-radius: .1rem;
     }
     .logo-bar {
         height: 5rem;
@@ -594,7 +606,7 @@ footer {
     }
     .greetings-image {
         width: 16rem;
-        height: 20rem;
+        height: 22rem;
         background: url("assets/グループ 1750/グループ\ 1750@2x-desktop.png") no-repeat;
         background-size: cover; 
     }
@@ -609,6 +621,9 @@ footer {
         margin: auto;
         padding: 3rem 6rem;   
     }
+    .vision-text {
+        margin-inline: 3.5rem;
+    }
     /* access section */
     .g-map {
         width: 23rem; 
@@ -622,10 +637,11 @@ footer {
         padding: 5.5px;
     }
     /* footer section */
+  
     .footer-banner {
-        height: 22rem;
-        margin-top: 20rem;
-        background:  url("./Assets/グループ 1826/グループ\ 1826@2x-desktop.png") no-repeat;
+        height: 20rem;
+        width: 100%;
+        background: url("./Assets/グループ 1826/グループ\ 1826@2x-desktop.png") no-repeat;
     }
     .footer-list li {
         padding-bottom: 1rem;
