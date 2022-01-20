@@ -266,7 +266,6 @@ main section {
     z-index: -1;
     background: url("assets/マスクグループ 94/マスクグループ 94-mobile.png") no-repeat;
     background-size: cover;
-    margin-bottom: -3rem;
 }
 
 .vision-container {
@@ -521,6 +520,7 @@ footer {
         grid-template-rows: 1fr auto;
     }
     .greetings-text {
+        margin-top: 2rem;
         width: 88%;
         height: 100%;
     }
