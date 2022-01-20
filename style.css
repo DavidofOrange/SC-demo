@@ -188,11 +188,8 @@
     border: solid 4px var(--dk-blue-color);
     width: 1.75rem;
     height: 1.5rem;
-    margin-top: 0rem;
-    aspect-ratio: 1;
-    padding: .02rem;
-    box-shadow: 0 0 .09rem .03rem var(--lt-gray-color);
-    background-color: rgb(230, 234, 240);
+    margin-top: 0.03rem;
+   
 }
 
 .toggle-button {
@@ -568,8 +565,8 @@ footer {
     }
     .blue-phone {
         border: none;
-        padding-top: .3rem;
-        padding-right: .5rem;
+        padding-top: .4rem;
+        padding-right: .4rem;
     }
     .お問い合わせ {
         height: 3vh;
