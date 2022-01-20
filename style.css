@@ -213,7 +213,7 @@ nav ul li {
 
 .banner-container {
     width: 100%;
-    height: auto;
+    height: 14rem;
     position: relative;
     overflow: hidden;
 }
@@ -222,11 +222,11 @@ nav ul li {
     width: 100%;
     height: 18rem;
     background: url("./Assets/banner-mobile1.png") no-repeat;
-    background-size: cover;
     opacity: 1;
     padding-left: 1rem;
     padding-top: 1rem;
     position: absolute;
+    
 }
 
 .banner-text {
@@ -239,6 +239,10 @@ nav ul li {
 /* main */
 
 /* greetings section */
+
+main {
+    
+}
 
 main section {
     margin-bottom: 5rem;
@@ -437,7 +441,6 @@ footer {
     padding: 1rem 0;
     font-size: .75rem;
 }
-
 @media (max-width: 40em) {
     .greetings-grid {
         display: grid;
@@ -457,6 +460,9 @@ footer {
 
 @media (min-width: 35em) {
     /*header section*/
+    .banner-container {
+        height: 17rem;
+    }
     .main-banner {
         height: 18rem;
         background: url("./Assets/banner-tablet.png") no-repeat;
@@ -521,7 +527,7 @@ footer {
     .main-nav {
         position: fixed;
         z-index: 999;
-        inset: 0 0 0 25%;
+        inset: 0 0 0 20%;
         list-style: none;
         padding: min(2rem, 5vh);
         margin: 0;
@@ -602,7 +608,10 @@ footer {
         left: 0;
         height: 35%;
         width: 2px;
+    }
 
+    .banner-container {
+        height: 32rem;
     }
   
     /* greetings section */
@@ -629,6 +638,10 @@ footer {
     }
     .vision-text {
         margin-inline: 3.5rem;
+    }
+    /* company section */
+    .company-grid {
+        padding-inline: 3rem;
     }
     /* access section */
     .g-map {
