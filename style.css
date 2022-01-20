@@ -404,14 +404,14 @@ main section {
 /* footer section*/
 
 footer {
-    margin-top: 10rem;
+    margin-top: 8rem;
     width: 100%;
 }
 
 .footer-banner {
     background: transparent url("./Assets/グループ 1826/グループ 1826-mobile.png") no-repeat;
     background-size: cover;
-
+    padding-left: 1.5rem;
 }
 
 .footer-logo {
@@ -421,7 +421,10 @@ footer {
 .footer-list li {
    padding-bottom: 1rem;
    border-right: white 1px solid;
-   padding-right: 1rem;
+}
+
+.white-phone {
+    margin-right: .3rem;
 }
 
 .footer-nav {
@@ -431,12 +434,14 @@ footer {
 
 .footer-nav a {
     color: var(--white-color);
+    text-decoration: none;
 }
 
 .foot-note {
     padding: 1rem 0;
     font-size: .75rem;
 }
+
 @media (max-width: 40em) {
     .greetings-grid {
         display: grid;
@@ -506,6 +511,13 @@ footer {
         padding: 4.6px;
     }
 }
+
+@media (min-width: 45em) {
+    .main-nav a {
+        padding-right: .5rem;
+    }
+}
+
 @media (max-width: 64.98em) {
     /* header section*/
     .toggle-button {
@@ -539,7 +551,7 @@ footer {
     /* footer section */
     .footer-nav {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         height: auto;
         text-align: center;
     }
@@ -664,20 +676,36 @@ footer {
     }
     .footer-list li {
         padding-bottom: 1rem;
-        border-right: white 1px solid;
-        padding-right: 4rem;
      }
+    .white-phone {
+        height: 1.5rem;
+        margin-right: .5rem;
+        margin-top: .8rem;
+    }
+    .お問い合わせ-footer {
+        width: 17.5rem;
+        height: 2.48rem;
+
+    }
      .footer-nav li a {
-         padding-right: 1rem;
          text-decoration: none;
      }
-     .お問い合わせ-footer {
-         width: 15rem;
+     .footer-nav > li {
+        padding-left: 1rem;
+        position: relative;
+    }
+    .footer-nav > li + li::after {
+        content: '';
+        background: rgb(226, 226, 226);
+        position: absolute;
+        bottom: 80%;
+        left: 0;
+        height: 15%;
+        width: 2px;
+    }
+     .nav-end {
+         border-right: none;
      }
 }
 
-@media (min-width: 45em) {
-    .main-nav a {
-        padding-right: .5rem;
-    }
-}
+
