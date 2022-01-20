@@ -346,8 +346,8 @@ main section {
 }
 
 .g-map {
-    width: 88%; 
-    height: 17rem;
+    width: 90%; 
+    height: 18rem;
     margin-top: 1rem;
 }
 
@@ -633,8 +633,8 @@ footer {
     }
     /* access section */
     .g-map {
-        width: 23rem; 
-        height: 20rem;
+        width: 24.69rem; 
+        height: 21.19rem;
         margin-top: 1rem;
     }
     .g-map-btn {
@@ -647,11 +647,14 @@ footer {
         padding: 5.5px;
     }
     /* footer section */
-  
+    footer {
+        overflow: hidden;
+    }
     .footer-banner {
         height: 20rem;
         width: 100%;
         background: url("./Assets/グループ 1826/グループ\ 1826@2x-desktop.png") no-repeat;
+        background-size: cover;
     }
     .footer-list li {
         padding-bottom: 1rem;
