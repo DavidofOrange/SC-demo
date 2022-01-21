@@ -27,9 +27,9 @@
      --fs-200: .675rem;
 
       /* letter-spacing */
-     --spacing-3: .07rem;
-     --spacing-2: .05rem;
-     --spacing-1: .03rem;
+     --spacing-3: .05rem;
+     --spacing-2: .03rem;
+     --spacing-1: .01rem;
     }
 
     @media (min-width: 35em) {
@@ -349,10 +349,6 @@ main section {
     margin-top: 1rem;
 }
 
-.g-map-btn {
-    margin-right: 1.5rem;
-}
-
 .right-arrow {
     border: solid var(--blue-color);
     border-width: 0 1px 1px 0;
@@ -521,6 +517,9 @@ footer {
         height: 100%;
     }
     /* access section */
+    .g-map-btn {
+        margin-right: 1.5rem;
+    }
     .map-text {
         padding: 1.5rem;
     }
@@ -634,6 +633,9 @@ footer {
         width: 24.69rem; 
         height: 21.19rem;
         margin-top: 1rem;
+    }
+    .g-map-btn {
+        margin-right: .5rem;
     }
     .right-arrow {
         padding: 5.5px;
