@@ -593,6 +593,9 @@ footer {
     .banner-container {
         height: 32rem;
     }
+    .main-banner {
+        padding-left: 14rem;
+    }
     /* greetings section */
     .greetings-grid {
         grid-template-columns: 1fr 1fr;
