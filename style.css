@@ -522,6 +522,9 @@ footer {
         height: auto;
         text-align: center;
     }
+    .footer-banner {
+        padding-bottom: 2rem;
+    }
 }
 
 @media (min-width: 65em) {
