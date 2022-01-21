@@ -214,8 +214,8 @@ nav ul li {
     height: 18rem;
     background: url("./Assets/banner-mobile1.png") no-repeat;
     opacity: 1;
-    padding-left: 1rem;
-    padding-top: 1rem;
+    padding-left: 1.9rem;
+    padding-top: 1.5rem;
     position: absolute;  
 }
 
@@ -233,10 +233,10 @@ nav ul li {
 main section {
     margin-bottom: 4rem;
 }
+
 .greetings-grid {
     display: grid;
-    place-items: center;
-   
+    place-items: center;   
 }
 
 .greetings-image-container {
@@ -362,9 +362,7 @@ main section {
     -webkit-transform: rotate(-45deg);
 }
 
-.map-text {
-    padding: 1.5rem;
-}
+
 
 .map-text p {
     margin-top: 1rem;
@@ -445,7 +443,7 @@ footer {
         height: 18rem;
         background: url("./Assets/banner-tablet.png") no-repeat;
         padding-left: 6rem;
-        padding-top: 5rem;
+        padding-top: 3rem;
     }
     main section {
         margin: 8rem 0;
@@ -481,8 +479,7 @@ footer {
 @media (min-width: 45em) {
     .main-nav a {
         padding-right: .5rem;
-    }
-  
+    }  
 }
 
 @media (max-width: 64.98em) {
@@ -522,6 +519,10 @@ footer {
         margin-top: 2rem;
         width: 88%;
         height: 100%;
+    }
+    /* access section */
+    .map-text {
+        padding: 1.5rem;
     }
     /* footer section */
     .footer-nav {
@@ -567,14 +568,12 @@ footer {
     .toggle-button {
         display: none;
     }
-
     .main-nav {
         background-color: white;
         display: flex;
         justify-content: center;
         margin-inline: 1rem;
     }
-  
     .main-nav a {
         color: var(--dk-gray-color);
     }
@@ -583,7 +582,6 @@ footer {
         padding-left: 1rem;
         position: relative;
     }
-    
     .main-nav > li + li::after {
         content: '';
         background: rgb(226, 226, 226);
@@ -593,16 +591,14 @@ footer {
         height: 35%;
         width: 2px;
     }
-
     .banner-container {
         height: 32rem;
     }
-  
     /* greetings section */
     .greetings-grid {
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
-        }
+    }
     .greetings-image {
         width: 16rem;
         height: 22rem;
@@ -654,7 +650,7 @@ footer {
     }
     .footer-list li {
         padding-bottom: 1rem;
-     }
+    }
     .white-phone {
         height: 1.5rem;
         margin-right: .5rem;
@@ -663,12 +659,11 @@ footer {
     .お問い合わせ-footer {
         width: 17.5rem;
         height: 2.48rem;
-
     }
-     .footer-nav li a {
-         text-decoration: none;
-     }
-     .footer-nav > li {
+    .footer-nav li a {
+        text-decoration: none;
+    }
+    .footer-nav > li {
         padding-left: 1rem;
         position: relative;
     }
@@ -681,9 +676,9 @@ footer {
         height: 25%;
         width: 2px;
     }
-     .nav-end {
-         border-right: none;
-     }
+    .nav-end {
+        border-right: none;
+    }
 }
 
 
