@@ -497,6 +497,12 @@ footer {
         margin: 0;
         flex-direction: column;
         transform: translateX(100%);
+        
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+
         transition: transform 500ms ease-in-out;    
         -webkit-transition: -webkit-transform 500ms ease-out;
         -moz-transition: transform 500ms ease-out;
