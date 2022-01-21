@@ -68,7 +68,6 @@
         }
     }
 
-
 /* typography */
 
 .font-white { color: var(--white-color); }
@@ -90,7 +89,6 @@
 .italic { font-style: italic; }
 
 .bold { font-weight: bold; }
-.bold900 { font-weight:900; }
 
 .roboto { font-family: var(--roboto-font); }
 .noto { font-family: var(--noto-font); }
@@ -146,12 +144,8 @@
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 .text-align { text-align: center; }
-.item-align { align-items:center;}
 .place-center { place-items: center;}
 .justify { justify-content: center; }
-.space-around { justify-content: space-around; }
-.space-between { justify-content: space-between; }
-.space-evenly { justify-content: space-evenly; }
 
 .hidden { display: none; }
 
@@ -357,8 +351,6 @@ main section {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
-
-
 
 .map-text p {
     margin-top: 1rem;
