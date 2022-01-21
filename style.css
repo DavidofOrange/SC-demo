@@ -216,8 +216,7 @@ nav ul li {
     opacity: 1;
     padding-left: 1rem;
     padding-top: 1rem;
-    position: absolute;
-    
+    position: absolute;  
 }
 
 .banner-text {
@@ -416,7 +415,7 @@ footer {
 }
 
 .footer-nav {
-    height: 8rem;
+    height: 100%;
     padding-top: 1.5rem;
 }
 
@@ -632,16 +631,13 @@ footer {
         padding-inline: 3rem;
     }
     /* access section */
+    .map-container {
+        margin-inline: 4rem;
+    }
     .g-map {
         width: 24.69rem; 
         height: 21.19rem;
         margin-top: 1rem;
-    }
-    .g-map-btn {
-        margin-right: 3rem;
-    }
-    .gmap-text-container {
-        margin-inline: 2rem;
     }
     .right-arrow {
         padding: 5.5px;
@@ -680,9 +676,9 @@ footer {
         content: '';
         background: rgb(226, 226, 226);
         position: absolute;
-        bottom: 85%;
+        bottom: 60%;
         left: 0;
-        height: 10%;
+        height: 25%;
         width: 2px;
     }
      .nav-end {
