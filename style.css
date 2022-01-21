@@ -129,8 +129,8 @@
 .list-style-square { list-style-type: square; }
 
 .container {
-    padding-inline: 1rem;
-    margin-inline: auto;
+    padding: 0 1rem;
+    margin: 0 auto;
     max-width: 60rem;
 }
 
@@ -138,7 +138,7 @@
     text-align: center;
     display: grid;
     place-items: center;
-    padding-inline: 1rem;
+    padding: 0 1rem;
 }
 
 .text-left { text-align: left; }
@@ -223,6 +223,9 @@ nav ul li {
 /* main */
 
 /* greetings section */
+.greetings-container {
+    padding-bottom: 4rem;
+}
 
 main section {
     margin-bottom: 4rem;
@@ -263,7 +266,7 @@ main section {
 
 .vision-container {
     background-color: var(--white-color);
-    margin-inline: .5rem;
+    margin: 0 .5rem;
 }
 
 /* company section */
@@ -281,7 +284,7 @@ main section {
     display: grid;
     grid-template-columns: 5rem auto;
     column-gap: .5rem;
-    margin-inline: 1rem;
+    margin: 0 1rem;
 }
 
 .company-grid ul li {
@@ -418,7 +421,7 @@ footer {
 @media (max-width: 40em) {
     .vision-container {
         padding-top: .01rem;
-        margin-inline: 1rem;
+        margin: 0 1rem;
     }
 }
 
@@ -566,7 +569,7 @@ footer {
         background-color: white;
         display: flex;
         justify-content: center;
-        margin-inline: 1rem;
+        margin: 0 1rem;
     }
     .main-nav a {
         color: var(--dk-gray-color);
@@ -592,6 +595,9 @@ footer {
         padding-left: 14rem;
     }
     /* greetings section */
+    .greetings-container {
+        padding-bottom: 8rem;
+    }
     .greetings-grid {
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
@@ -617,15 +623,15 @@ footer {
         padding: 3rem 6rem;   
     }
     .vision-text {
-        margin-inline: 3.5rem;
+        margin: 0 3.5rem;
     }
     /* company section */
     .company-grid {
-        padding-inline: 3rem;
+        padding: 0 3rem;
     }
     /* access section */
     .map-container {
-        margin-inline: 4rem;
+        margin: 0 4rem;
     }
     .g-map {
         width: 24.69rem; 
