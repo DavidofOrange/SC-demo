@@ -241,7 +241,7 @@ main section {
 .greetings-image {
     width: 12rem;
     height: 16rem;
-    background: url("./Assets/グループ 1750/グループ\ 1750-mobile.png");
+    background: url("./Assets/グループ 1750/グループ 1750-mobile.png");
     background-size: cover;
     margin-bottom: 1rem;
     display: absolute; 
@@ -617,7 +617,7 @@ footer {
     .greetings-image {
         width: 16rem;
         height: 22rem;
-        background: url("./Assets/グループ 1750/グループ\ 1750@2x-desktop.png") no-repeat;
+        background: url("./Assets/グループ 1750/グループ 1750@2x-desktop.png") no-repeat;
         background-size: cover; 
     }
     .greetings-text {
@@ -663,7 +663,7 @@ footer {
     .footer-banner {
         height: 20rem;
         width: 100%;
-        background: url("./Assets/グループ 1826/グループ\ 1826@2x-desktop.png") no-repeat;
+        background: url("./Assets/グループ 1826/グループ 1826@2x-desktop.png") no-repeat;
         background-size: cover;
     }
     .footer-list li {
