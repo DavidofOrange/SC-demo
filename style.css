@@ -176,7 +176,7 @@
 }
 
 .toggle-button {
-    background: var(--blue-color) url("assets/icon-hamburger.svg") center center no-repeat;
+    background: var(--blue-color) url("./Assets/icon-hamburger.svg") center center no-repeat;
     width: 2.8rem;
     height: 2.5rem;
 }
@@ -241,7 +241,7 @@ main section {
 .greetings-image {
     width: 12rem;
     height: 16rem;
-    background: url("assets/グループ 1750/グループ\ 1750-mobile.png");
+    background: url("./Assets/グループ 1750/グループ\ 1750-mobile.png");
     background-size: cover;
     margin-bottom: 1rem;
     display: absolute; 
@@ -258,7 +258,7 @@ main section {
     height: 8rem;
     position: relative;
     z-index: -1;
-    background: url("assets/マスクグループ 94/マスクグループ 94-mobile.png") no-repeat;
+    background: url("./Assets/マスクグループ 94/マスクグループ 94-mobile.png") no-repeat;
     background-size: cover;
 }
 
@@ -474,7 +474,7 @@ footer {
 @media (max-width: 64.98em) {
     /* header section*/
     .toggle-button {
-        background: var(--blue-color) url("assets/icon-hamburger.svg") center center no-repeat;
+        background: var(--blue-color) url("./Assets/icon-hamburger.svg") center center no-repeat;
         display: block;
         z-index: 99999;
         width: 2rem;
@@ -484,7 +484,7 @@ footer {
         border: solid 4px var(--blue-color);
     }
     .toggle-button[aria-expanded="true"] {
-        background-image: url("assets/icon-close.svg");  
+        background-image: url("./Assets/icon-close.svg");  
     }
     .main-nav {
         position: fixed;
@@ -617,7 +617,7 @@ footer {
     .greetings-image {
         width: 16rem;
         height: 22rem;
-        background: url("assets/グループ 1750/グループ\ 1750@2x-desktop.png") no-repeat;
+        background: url("./Assets/グループ 1750/グループ\ 1750@2x-desktop.png") no-repeat;
         background-size: cover; 
     }
     .greetings-text {
@@ -627,7 +627,7 @@ footer {
     .vision-image {
         height: 35rem;
         width: 100%;
-        background: url("assets/マスクグループ 94/マスクグループ 94@2x-desktop.png") no-repeat;
+        background: url("./Assets/マスクグループ 94/マスクグループ 94@2x-desktop.png") no-repeat;
         background-size: cover;
     }
     .vision-container {
